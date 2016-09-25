@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+PUT     /transactionservice/transaction/:transactionId      controllers.TransactionController.put(transactionId: Long)
+GET     /transactionservice/transaction/:transactionId      controllers.TransactionController.get(transactionId: Long)
+GET     /transactionservice/type/:transactionType           controllers.TransactionController.getByteType(transactionType: String)
+GET     /transactionservice/sum/:transactionId              controllers.TransactionController.getSumTransactionAmounts(transactionId: Long)
